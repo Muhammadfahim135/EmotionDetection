@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Emotion Detector</title>
+    <script type="text/javascript" src="{{ url_for('static', filename='mywebscript.js') }}"></script>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 50px; background-color: #f4f6f8; }
+        .container { max-width: 650px; margin: auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        h1 { color: #161616; margin-bottom: 20px; }
+        label { font-weight: bold; color: #333; }
+        input[type="text"] { width: 100%; padding: 12px; margin: 12px 0; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px; font-size: 16px; }
+        button { background-color: #0f62fe; color: white; padding: 12px 24px; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; font-weight: bold; }
+        button:hover { background-color: #0043ce; }
+        #system_response { margin-top: 25px; font-size: 16px; line-height: 1.6; color: #161616; padding: 16px; background: #edf5ff; border-left: 4px solid #0f62fe; border-radius: 2px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Emotion Detector</h1>
+        <label for="textToAnalyze">Text to analyze:</label>
+        <input type="text" id="textToAnalyze" name="textToAnalyze" placeholder="e.g. I am glad this happened">
+        <br><br>
+        <button onclick="RunSentimentAnalysis()">Run Sentiment Analysis</button>
+        <br><br>
+        <div id="system_response"></div>
+    </div>
+</body>
+</html>
