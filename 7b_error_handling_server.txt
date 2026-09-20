@@ -13,7 +13,7 @@ def emo_detector():
     Analyzes the user-provided text and returns the formatted emotion response.
     """
     text_to_analyze = request.args.get('textToAnalyze')
-
+    
     if not text_to_analyze or not text_to_analyze.strip():
         return "Please enter a statement to analyze."
 
