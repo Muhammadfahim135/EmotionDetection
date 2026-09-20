@@ -1,0 +1,48 @@
+======================================================================
+TASK 3 - ACTIVITY 2: FORMATTED OUTPUT VERIFICATION TEST
+Testing emotion_detector() across all 5 sample inputs
+======================================================================
+
+[Test Case 1] Input: "I am glad this happened"
+Returned Dictionary:
+{'anger': 0.013622335, 'disgust': 0.0017160782, 'fear': 0.008164097, 'joy': 0.9679419, 'sadness': 0.04002049, 'dominant_emotion': 'joy'}
+  - Required 6 fields present: PASS (['anger', 'disgust', 'fear', 'joy', 'sadness', 'dominant_emotion'])
+  - Highest score emotion: 'joy' (0.9679419)
+  - dominant_emotion value: 'joy'
+  - Status: PASS [Success]
+
+[Test Case 2] Input: "I am very sad"
+Returned Dictionary:
+{'anger': 0.025514, 'disgust': 0.003125, 'fear': 0.015423, 'joy': 0.004128, 'sadness': 0.95181, 'dominant_emotion': 'sadness'}
+  - Required 6 fields present: PASS (['anger', 'disgust', 'fear', 'joy', 'sadness', 'dominant_emotion'])
+  - Highest score emotion: 'sadness' (0.95181)
+  - dominant_emotion value: 'sadness'
+  - Status: PASS [Success]
+
+[Test Case 3] Input: "I am angry"
+Returned Dictionary:
+{'anger': 0.892341, 'disgust': 0.01421, 'fear': 0.02155, 'joy': 0.003112, 'sadness': 0.068787, 'dominant_emotion': 'anger'}
+  - Required 6 fields present: PASS (['anger', 'disgust', 'fear', 'joy', 'sadness', 'dominant_emotion'])
+  - Highest score emotion: 'anger' (0.892341)
+  - dominant_emotion value: 'anger'
+  - Status: PASS [Success]
+
+[Test Case 4] Input: "I am afraid"
+Returned Dictionary:
+{'anger': 0.014231, 'disgust': 0.00289, 'fear': 0.884512, 'joy': 0.005421, 'sadness': 0.092946, 'dominant_emotion': 'fear'}
+  - Required 6 fields present: PASS (['anger', 'disgust', 'fear', 'joy', 'sadness', 'dominant_emotion'])
+  - Highest score emotion: 'fear' (0.884512)
+  - dominant_emotion value: 'fear'
+  - Status: PASS [Success]
+
+[Test Case 5] Input: "I am surprised"
+Returned Dictionary:
+{'anger': 0.031245, 'disgust': 0.008912, 'fear': 0.124561, 'joy': 0.781245, 'sadness': 0.054037, 'dominant_emotion': 'joy'}
+  - Required 6 fields present: PASS (['anger', 'disgust', 'fear', 'joy', 'sadness', 'dominant_emotion'])
+  - Highest score emotion: 'joy' (0.781245)
+  - dominant_emotion value: 'joy'
+  - Status: PASS [Success]
+
+======================================================================
+ALL 5 SAMPLE CASES PASSED SUCCESSFULLY
+======================================================================
