@@ -1,4 +1,6 @@
-# Emotion Detector
+# Final Project
+
+## Emotion Detector
 
 Emotion Detector is a web application built with Flask and Python that analyzes emotional sentiment in text statements using the Watson NLP EmotionPredict service.
 
